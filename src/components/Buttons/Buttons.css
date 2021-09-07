@@ -1,0 +1,24 @@
+.beet-button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.green-button {
+    background: url(./assets/green-button.svg) center center;
+    width: 290px;
+    height: 80px;
+}
+
+.green-button-small {
+    background: url(./assets/green-button-small.svg) center center;
+    width: 212px;
+    height: 80px;
+}
+
+.blue-button-small {
+    background: url(./assets/blue-button-small.svg) center center;
+    width: 212px;
+    height: 80px;
+}
+

@@ -1,0 +1,7 @@
+h1.hero-h1 {
+    display: none
+}
+
+.hero-container {
+    background: url(./assets/hero-shadow.png) bottom left repeat-x;
+}

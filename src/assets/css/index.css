@@ -1,0 +1,16 @@
+@import "global/fonts.css";
+
+body {
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.spookyTown {
+    background-image: linear-gradient(to bottom,
+    #08061F,
+    #1B1464,
+    #00395E,
+    #00544E,
+    #000000
+    );
+}
