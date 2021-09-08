@@ -9,6 +9,8 @@ import HighSpeedTradingHeadline from './assets/high-speed-trading-headline.svg';
 import HighSpeedTradingImage from './assets/speed-image.png';
 import CommunityImage from './assets/community-image.png';
 import CommunityProjectHeadline from './assets/community-project-headline.svg';
+import { BlueButton, GreenButton } from '../components/Buttons/Buttons';
+import { ChevronRightIcon } from '@heroicons/react/solid';
 
 export function Body() {
     return (
@@ -17,8 +19,8 @@ export function Body() {
                 headlineImage={YieldGeneratingHeadline}
                 headlineText="Yield generating portfolios. Make your crypto work for you"
                 image={YieldGeneratingImage}
-                buttonLeft={{ text: 'Invest', href: '#' }}
-                buttonRight={{ text: 'Trade', href: '#' }}
+                //buttonLeft={{ text: 'Invest', href: 'https://app.beethovenx.io' }}
+                //buttonRight={{ text: 'Trade', href: 'https://app.beethovenx.io/#/trade' }}
                 imageOnLeft={true}
                 text="With our automatically rebalancing investment pools, we turn the concept of an index fund on its head: instead of paying fees to portfolio managers to rebalance your portfolio, you collect fees from traders, who rebalance your portfolio by following arbitrage opportunities."
                 listItems={[
@@ -31,25 +33,20 @@ export function Body() {
                 headlineImage={FundsHeadline}
                 headlineText="Beethoven X Funds"
                 image={FundsImage}
-                buttonLeft={{ text: 'Invest', href: '#' }}
-                buttonRight={{ text: 'Trade', href: '#' }}
+                //buttonLeft={{ text: 'Invest', href: 'https://app.beethovenx.io' }}
                 text="Our funds provide investors with a full spectrum of exposure to the Fantom ecosystem, ranging from promising early stage DeFi tokens to more liquid assets like ETH and BTC. Each fund consists of a basket of underlying assets, weighted to provide optimal exposure."
-            />
-            <ContentBlock
-                headlineImage={MarketOpportunitiesHeadline}
-                headlineText="Leveraging market opportunities"
-                image={MarketOpportunitiesImage}
-                buttonLeft={{ text: 'Invest', href: '#' }}
-                buttonRight={{ text: 'Trade', href: '#' }}
-                imageOnLeft={true}
-                text="Beethoven X’s goal is to maximize the risk-adjusted return on your crypto portfolio. We will continue to launch automated investment strategies utilizing best of breed DeFi protocols, strong partnerships and innovative yield optimizers. We make your crypto work for you."
-            />
+            >
+                <div className="mt-8">
+                    <GreenButton href="https://app.beethovenx.io" customClassName="mx-auto sm:mx-0">
+                        Invest now
+                    </GreenButton>
+                </div>
+            </ContentBlock>
+
             <ContentBlock
                 headlineImage={HighSpeedTradingHeadline}
                 headlineText="Truly decentralized high-speed trading"
                 image={HighSpeedTradingImage}
-                buttonLeft={{ text: 'Invest', href: '#' }}
-                buttonRight={{ text: 'Trade', href: '#' }}
                 text="Beethoven X enables secure and efficient - high speed, low cost - trading. Start trading immediately, no registration required. Just connect your wallet and you’re good to go."
                 listItems={[
                     'Best possible price using the Smart Order Router (SOR)',
@@ -57,21 +54,61 @@ export function Body() {
                     'MEV Protection',
                     'Gas efficient multi-hop trades utilizing the Balancer V2 Vault',
                 ]}
-            />
+                imageOnLeft={true}
+            >
+                <div className="mt-8">
+                    <BlueButton
+                        href="https://app.beethovenx.io/#/trade"
+                        customClassName="mx-auto sm:mx-0"
+                    >
+                        Start trading
+                    </BlueButton>
+                </div>
+            </ContentBlock>
+            <ContentBlock
+                headlineImage={MarketOpportunitiesHeadline}
+                headlineText="Leveraging market opportunities"
+                image={MarketOpportunitiesImage}
+                //buttonLeft={{ text: 'Invest', href: 'https://app.beethovenx.io' }}
+                //buttonRight={{ text: 'Trade', href: 'https://app.beethovenx.io/#/trade' }}
+                text="Beethoven X’s goal is to maximize the risk-adjusted return on your crypto portfolio. We will continue to launch automated investment strategies utilizing best of breed DeFi protocols, strong partnerships and innovative yield optimizers. We make your crypto work for you."
+            >
+                <div className="mt-8">
+                    <GreenButton
+                        href="https://docs.beethovenx.io/roadmap"
+                        customClassName="mx-auto sm:mx-0"
+                    >
+                        Checkout our roadmap
+                    </GreenButton>
+                </div>
+            </ContentBlock>
             <div className="max-w-7xl mx-auto pt-16 pb-32">
                 <div className="flex justify-center">
                     <img src={CommunityProjectHeadline} />
                 </div>
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-book">
-                    The BEET token is the limited supply governance token for Beethoven X. Get
-                    involved!
+                    The $BEET token is the limited supply governance token for Beethoven X.
                 </p>
 
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-body font-bold">
                     Participate in governance and shape the future of Beethoven X &middot; 80% of
-                    Protocol fees will be used to buyback BEET and redistribute them to stakers
-                    &middot; Future strategies will require BEET for participation
+                    Protocol fees will be used to buyback $BEET and redistribute them to stakers
+                    &middot; Future strategies will require $BEET for participation
                 </p>
+                <div className="mt-12 md:flex items-center justify-center">
+                    <GreenButton
+                        href="https://docs.beethovenx.io"
+                        customClassName="mx-auto md:mx-0"
+                    >
+                        Find out more
+                    </GreenButton>
+                    <BlueButton
+                        href="https://app.beethovenx.io/#/trade"
+                        customClassName="md:ml-8 mx-auto md:mx-0 mt-4 md:mt-0"
+                    >
+                        Buy $BEET
+                    </BlueButton>
+                </div>
             </div>
 
             <img src={CommunityImage} />

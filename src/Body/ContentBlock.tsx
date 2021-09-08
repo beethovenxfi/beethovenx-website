@@ -4,13 +4,12 @@ import {
     GreenButton,
     GreenButtonSmall,
 } from '../components/Buttons/Buttons';
-import { ChevronRightIcon } from '@heroicons/react/solid';
 
 interface Props {
     headlineImage: any;
     headlineText: string;
     image: any;
-    buttonLeft: {
+    buttonLeft?: {
         text: string;
         href: string;
     };
@@ -69,32 +68,36 @@ export function ContentBlock({
                 ) : null}
                 {children}
 
-                <div className="sm:hidden pt-8">
-                    <GreenButton href={buttonLeft.href} customClassName="mx-auto">
-                        {buttonLeft.text}
-                    </GreenButton>
-                    {buttonRight ? (
-                        <BlueButton href={buttonRight.href} customClassName="mx-auto mt-4">
-                            {buttonRight.text}
-                        </BlueButton>
-                    ) : null}
-                </div>
-                <div className="pt-12 hidden sm:flex">
-                    <GreenButtonSmall
-                        href={buttonLeft.href}
-                        customClassName="hidden mx-auto sm:mx-0"
-                    >
-                        {buttonLeft.text}
-                    </GreenButtonSmall>
-                    {buttonRight ? (
-                        <BlueButtonSmall
-                            href={buttonRight.href}
-                            customClassName="mx-auto mt-4 sm:ml-4 sm:mt-0 sm:mr-0"
+                {buttonLeft ? (
+                    <div className="sm:hidden pt-8">
+                        <GreenButton href={buttonLeft.href} customClassName="mx-auto">
+                            {buttonLeft.text}
+                        </GreenButton>
+                        {buttonRight ? (
+                            <BlueButton href={buttonRight.href} customClassName="mx-auto mt-4">
+                                {buttonRight.text}
+                            </BlueButton>
+                        ) : null}
+                    </div>
+                ) : null}
+                {buttonLeft ? (
+                    <div className="pt-12 hidden sm:flex">
+                        <GreenButtonSmall
+                            href={buttonLeft.href}
+                            customClassName="hidden mx-auto sm:mx-0"
                         >
-                            {buttonRight.text}
-                        </BlueButtonSmall>
-                    ) : null}
-                </div>
+                            {buttonLeft.text}
+                        </GreenButtonSmall>
+                        {buttonRight ? (
+                            <BlueButtonSmall
+                                href={buttonRight.href}
+                                customClassName="mx-auto mt-4 sm:ml-4 sm:mt-0 sm:mr-0"
+                            >
+                                {buttonRight.text}
+                            </BlueButtonSmall>
+                        ) : null}
+                    </div>
+                ) : null}
             </div>
             {!imageOnLeft ? (
                 <div className="hidden lg:block flex-1 justify-center">
