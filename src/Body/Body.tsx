@@ -125,10 +125,10 @@ export function Body() {
                                 beethovenxio.medium.com
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://t.me/beethovenxio">
                             <img src={TelegramIcon} width="40" className="mx-auto" />
                             <div className="mt-2 text-green-500 font-book hidden lg:block">
-                                telegram.com/beethoven-x
+                                t.me/beethovenxio
                             </div>
                         </a>
                     </div>
