@@ -5,8 +5,8 @@ import LogoSVG from '../assets/images/logo.svg';
 import { GreenButton, GreenButtonSmall } from '../components/Buttons/Buttons';
 
 const navigation = [
-    { name: 'Blog', href: '#' },
-    { name: 'Docs', href: '#' },
+    { name: 'Blog', href: 'https://beethovenxio.medium.com/' },
+    { name: 'Docs', href: 'https://docs.beethovenx.io/' },
 ];
 
 export default function Navigation() {
@@ -19,7 +19,7 @@ export default function Navigation() {
                 >
                     <div className="flex items-center flex-1">
                         <div className="flex items-center justify-between w-full md:w-auto">
-                            <a href="#">
+                            <a href="">
                                 <span className="sr-only">Beethoven X</span>
                                 <img
                                     className="h-16 w-auto sm:h-16"
@@ -37,18 +37,20 @@ export default function Navigation() {
                     </div>
                     <div className="hidden md:flex md:items-center md:space-x-6">
                         <a
-                            href="#"
+                            href="https://docs.beethovenx.io/"
                             className="text-base font-medium text-green-500 hover:text-white font-body"
                         >
                             Docs
                         </a>
                         <a
-                            href="#"
+                            href="https://beethovenxio.medium.com/"
                             className="text-base font-medium text-green-500 hover:text-white font-body"
                         >
                             Blog
                         </a>
-                        <GreenButtonSmall href={'#'}>Launch App</GreenButtonSmall>
+                        <GreenButtonSmall href="https://app.beethovenx.io/">
+                            Launch App
+                        </GreenButtonSmall>
                     </div>
                 </nav>
             </div>
@@ -97,7 +99,10 @@ export default function Navigation() {
                             </div>
 
                             <div className="mt-6 px-5">
-                                <GreenButton href={''} customClassName="mx-auto">
+                                <GreenButton
+                                    href="https://app.beethovenx.io/"
+                                    customClassName="mx-auto"
+                                >
                                     Launch App
                                 </GreenButton>
                             </div>
