@@ -22,3 +22,8 @@
     height: 80px;
 }
 
+.blue-button {
+    background: url(./assets/blue-button.svg) center center;
+    width: 290px;
+    height: 80px;
+}

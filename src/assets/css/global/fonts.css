@@ -20,3 +20,11 @@
     font-style: normal;
     font-weight: 100;
 }
+
+@font-face {
+    font-family: "Gotham Rounded Book";
+    src: url("../../fonts/GothamRnd-Book.woff2") format("woff2"),
+    url("../../fonts/GothamRnd-Book.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}

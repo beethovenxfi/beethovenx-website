@@ -2,13 +2,11 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import LogoSVG from '../assets/images/logo.svg';
-import { GreenButtonSmall } from '../components/Buttons/Buttons';
+import { GreenButton, GreenButtonSmall } from '../components/Buttons/Buttons';
 
 const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Blog', href: '#' },
+    { name: 'Docs', href: '#' },
 ];
 
 export default function Navigation() {
@@ -30,7 +28,7 @@ export default function Navigation() {
                                 />
                             </a>
                             <div className="-mr-2 flex items-center md:hidden">
-                                <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
+                                <Popover.Button className="bg-green-500 rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-green-500 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     <MenuIcon className="h-6 w-6" aria-hidden="true" />
                                 </Popover.Button>
@@ -68,17 +66,18 @@ export default function Navigation() {
                     focus
                     className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
                 >
-                    <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                    <div className="rounded-lg shadow-md mobile-menu ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="px-5 pt-4 flex items-center justify-between">
                             <div>
                                 <img
-                                    className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                                    alt=""
+                                    className="h-16 w-auto relative"
+                                    src={LogoSVG}
+                                    alt="Beethoven X"
+                                    style={{ left: -18 }}
                                 />
                             </div>
                             <div className="-mr-2">
-                                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
+                                <Popover.Button className="bg-black rounded-full p-2 inline-flex items-center justify-center text-white hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
                                     <span className="sr-only">Close menu</span>
                                     <XIcon className="h-6 w-6" aria-hidden="true" />
                                 </Popover.Button>
@@ -90,27 +89,17 @@ export default function Navigation() {
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                                        className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-green-500"
                                     >
                                         {item.name}
                                     </a>
                                 ))}
                             </div>
+
                             <div className="mt-6 px-5">
-                                <a
-                                    href="#"
-                                    className="block text-center w-full py-3 px-4 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700"
-                                >
-                                    Start free trial
-                                </a>
-                            </div>
-                            <div className="mt-6 px-5">
-                                <p className="text-center text-base font-medium text-gray-500">
-                                    Existing customer?{' '}
-                                    <a href="#" className="text-gray-900 hover:underline">
-                                        Login
-                                    </a>
-                                </p>
+                                <GreenButton href={''} customClassName="mx-auto">
+                                    Launch App
+                                </GreenButton>
                             </div>
                         </div>
                     </div>

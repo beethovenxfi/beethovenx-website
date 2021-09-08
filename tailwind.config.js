@@ -16,10 +16,26 @@ module.exports = {
                     900: '#1B1464',
                 },
             },
+            maxWidth: {
+                '1/4': '25%',
+                '1/2': '50%',
+                '3/4': '75%',
+            },
         },
         fontFamily: {
             body: [
                 'Gotham Rounded',
+                '-apple-system',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                'Helvetica',
+                'Arial',
+                'sans-serif',
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+            ],
+            book: [
+                'Gotham Rounded Book',
                 '-apple-system',
                 'BlinkMacSystemFont',
                 '"Segoe UI"',
