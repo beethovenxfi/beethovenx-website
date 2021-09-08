@@ -21,6 +21,11 @@ export function Body() {
                 buttonRight={{ text: 'Trade', href: '#' }}
                 imageOnLeft={true}
                 text="With our automatically rebalancing investment pools, we turn the concept of an index fund on its head: instead of paying fees to portfolio managers to rebalance your portfolio, you collect fees from traders, who rebalance your portfolio by following arbitrage opportunities."
+                listItems={[
+                    'Set if and forget it',
+                    'Collect fees from traders and arbitragers',
+                    'Permissionless platform, you control your funds',
+                ]}
             />
             <ContentBlock
                 headlineImage={FundsHeadline}
@@ -46,22 +51,30 @@ export function Body() {
                 buttonLeft={{ text: 'Invest', href: '#' }}
                 buttonRight={{ text: 'Trade', href: '#' }}
                 text="Beethoven X enables secure and efficient - high speed, low cost - trading. Start trading immediately, no registration required. Just connect your wallet and you’re good to go."
+                listItems={[
+                    'Best possible price using the Smart Order Router (SOR)',
+                    'Low slippage trades on Stable Pools',
+                    'MEV Protection',
+                    'Gas efficient multi-hop trades utilizing the Balancer V2 Vault',
+                ]}
             />
             <div className="max-w-7xl mx-auto pt-16 pb-32">
-                <img src={CommunityImage} />
-
-                <div className="flex justify-center pt-16">
+                <div className="flex justify-center">
                     <img src={CommunityProjectHeadline} />
                 </div>
-                <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center">
-                    The BEET token is the limited supply governance token for Beethoven X.
+                <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-book">
+                    The BEET token is the limited supply governance token for Beethoven X. Get
+                    involved!
                 </p>
-                <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center">
+
+                <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-body font-bold">
                     Participate in governance and shape the future of Beethoven X &middot; 80% of
                     Protocol fees will be used to buyback BEET and redistribute them to stakers
                     &middot; Future strategies will require BEET for participation
                 </p>
             </div>
+
+            <img src={CommunityImage} />
         </div>
     );
 }

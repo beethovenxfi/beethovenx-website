@@ -4,6 +4,7 @@ import {
     GreenButton,
     GreenButtonSmall,
 } from '../components/Buttons/Buttons';
+import { ChevronRightIcon } from '@heroicons/react/solid';
 
 interface Props {
     headlineImage: any;
@@ -20,6 +21,7 @@ interface Props {
     text: string;
     children?: any;
     imageOnLeft?: boolean;
+    listItems?: string[];
 }
 
 export function ContentBlock({
@@ -31,6 +33,7 @@ export function ContentBlock({
     buttonRight,
     imageOnLeft,
     children,
+    listItems,
 }: Props) {
     const centerClassName = imageOnLeft ? 'flex-1 lg:pl-24' : 'flex-1 lg:pr-24';
 
@@ -40,7 +43,7 @@ export function ContentBlock({
                 <img src={image} width="492" className="max-w-3/4 mx-auto" />
             </div>
             {imageOnLeft ? (
-                <div className="hidden lg:flex flex-1">
+                <div className="hidden lg:block flex-1">
                     <img
                         src={image}
                         width="492"
@@ -51,9 +54,19 @@ export function ContentBlock({
             <div className={centerClassName}>
                 <h2 className="hidden">{headlineText}</h2>
                 <img src={headlineImage} />
-                <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-left font-book">
+                <p className="mt-3 text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-left font-book">
                     {text}
                 </p>
+                {listItems ? (
+                    <div className="font-body text-green-500 ml-4 mt-4 text-lg">
+                        {listItems.map((item) => (
+                            <div className="flex align-center">
+                                <div className="text-3xl mr-4">·</div>
+                                <div className="flex items-center">{item}</div>
+                            </div>
+                        ))}
+                    </div>
+                ) : null}
                 {children}
 
                 <div className="sm:hidden pt-8">
@@ -81,11 +94,10 @@ export function ContentBlock({
                             {buttonRight.text}
                         </BlueButtonSmall>
                     ) : null}
-                    *
                 </div>
             </div>
             {!imageOnLeft ? (
-                <div className="hidden lg:flex flex-1 justify-center">
+                <div className="hidden lg:block flex-1 justify-center">
                     <img
                         src={image}
                         width="492"

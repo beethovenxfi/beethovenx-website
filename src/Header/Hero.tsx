@@ -1,4 +1,3 @@
-import { ChevronRightIcon } from '@heroicons/react/solid';
 import './Hero.css';
 import HeroText from './assets/title-text.svg';
 import HeroImage from './assets/hero-image.png';
