@@ -9,8 +9,10 @@ import HighSpeedTradingHeadline from './assets/high-speed-trading-headline.svg';
 import HighSpeedTradingImage from './assets/speed-image.png';
 import CommunityImage from './assets/community-image.png';
 import CommunityProjectHeadline from './assets/community-project-headline.svg';
+import TelegramIcon from './assets/telegram-icon.png';
+import TwitterIcon from './assets/twitter-icon.png';
+import MediumIcon from './assets/medium-icon.png';
 import { BlueButton, GreenButton } from '../components/Buttons/Buttons';
-import { ChevronRightIcon } from '@heroicons/react/solid';
 
 export function Body() {
     return (
@@ -82,12 +84,12 @@ export function Body() {
                     </GreenButton>
                 </div>
             </ContentBlock>
-            <div className="max-w-7xl mx-auto pt-16 pb-32">
+            <div className="max-w-7xl mx-auto pt-16 pb-20">
                 <div className="flex justify-center">
                     <img src={CommunityProjectHeadline} />
                 </div>
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-book">
-                    The $BEET token is the limited supply governance token for Beethoven X.
+                    The $BEET token will be the limited supply governance token for Beethoven X.
                 </p>
 
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-body font-bold">
@@ -95,19 +97,41 @@ export function Body() {
                     Protocol fees will be used to buyback $BEET and redistribute them to stakers
                     &middot; Future strategies will require $BEET for participation
                 </p>
-                <div className="mt-12 md:flex items-center justify-center">
-                    <GreenButton
-                        href="https://docs.beethovenx.io"
-                        customClassName="mx-auto md:mx-0"
-                    >
-                        Find out more
-                    </GreenButton>
-                    <BlueButton
+                <div className="divide-y-2 divide-green-500 divide-solid">
+                    <div className="mt-12 md:flex items-center justify-center mb-16">
+                        <GreenButton
+                            href="https://docs.beethovenx.io"
+                            customClassName="mx-auto md:mx-0"
+                        >
+                            Find out more
+                        </GreenButton>
+                        {/*<BlueButton
                         href="https://app.beethovenx.io/#/trade"
                         customClassName="md:ml-8 mx-auto md:mx-0 mt-4 md:mt-0"
                     >
                         Buy $BEET
-                    </BlueButton>
+                    </BlueButton>*/}
+                    </div>
+                    <div className="flex justify-center pt-16">
+                        <a href="https://twitter.com/beethoven_x" className="mr-16">
+                            <img src={TwitterIcon} width="40" className="mx-auto" />
+                            <div className="mt-2 text-green-500 font-book hidden lg:block">
+                                twitter.com/beethoven_x
+                            </div>
+                        </a>
+                        <a href="https://beethovenxio.medium.com/" className="mr-16">
+                            <img src={MediumIcon} width="40" className="mx-auto" />
+                            <div className="mt-2 text-green-500 font-book hidden lg:block">
+                                beethovenxio.medium.com
+                            </div>
+                        </a>
+                        <a href="">
+                            <img src={TelegramIcon} width="40" className="mx-auto" />
+                            <div className="mt-2 text-green-500 font-book hidden lg:block">
+                                telegram.com/beethoven-x
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
