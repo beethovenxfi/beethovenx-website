@@ -89,13 +89,13 @@ export function Body() {
                     <img src={CommunityProjectHeadline} />
                 </div>
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-book">
-                    The $BEET token will be the limited supply governance token for Beethoven X.
+                    The $BEETS token will be the limited supply governance token for Beethoven X.
                 </p>
 
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-body font-bold">
                     Participate in governance and shape the future of Beethoven X &middot; 80% of
-                    Protocol fees will be used to buyback $BEET and redistribute them to stakers
-                    &middot; Future strategies will require $BEET for participation
+                    Protocol fees will be used to buyback $BEETS and redistribute them to stakers
+                    &middot; Future strategies will require $BEETS for participation
                 </p>
                 <div className="divide-y-2 divide-green-500 divide-solid">
                     <div className="mt-12 md:flex items-center justify-center mb-16">
@@ -109,7 +109,7 @@ export function Body() {
                         href="https://app.beethovenx.io/#/trade"
                         customClassName="md:ml-8 mx-auto md:mx-0 mt-4 md:mt-0"
                     >
-                        Buy $BEET
+                        Buy $BEETS
                     </BlueButton>*/}
                     </div>
                     <div className="flex justify-center pt-16">
