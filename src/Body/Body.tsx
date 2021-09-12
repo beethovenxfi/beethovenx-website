@@ -9,7 +9,7 @@ import HighSpeedTradingHeadline from './assets/high-speed-trading-headline.svg';
 import HighSpeedTradingImage from './assets/speed-image.png';
 import CommunityImage from './assets/community-image.png';
 import CommunityProjectHeadline from './assets/community-project-headline.svg';
-import TelegramIcon from './assets/telegram-icon.png';
+import DiscordIcon from './assets/discord-icon.png';
 import TwitterIcon from './assets/twitter-icon.png';
 import MediumIcon from './assets/medium-icon.png';
 import { BlueButton, GreenButton } from '../components/Buttons/Buttons';
@@ -125,10 +125,10 @@ export function Body() {
                                 beethovenxio.medium.com
                             </div>
                         </a>
-                        <a href="https://t.me/beethovenxio">
-                            <img src={TelegramIcon} width="40" className="mx-auto" />
+                        <a href="https://discord.gg/vVhHrJuk">
+                            <img src={DiscordIcon} width="40" className="mx-auto" />
                             <div className="mt-2 text-green-500 font-book hidden lg:block">
-                                t.me/beethovenxio
+                                discord.gg/vVhHrJuk
                             </div>
                         </a>
                     </div>
