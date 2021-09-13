@@ -125,10 +125,10 @@ export function Body() {
                                 beethovenxio.medium.com
                             </div>
                         </a>
-                        <a href="https://discord.gg/vVhHrJuk">
+                        <a href="https://discord.gg/jedS4zGk28">
                             <img src={DiscordIcon} width="40" className="mx-auto" />
                             <div className="mt-2 text-green-500 font-book hidden lg:block">
-                                discord.gg/vVhHrJuk
+                                discord.gg/jedS4zGk28
                             </div>
                         </a>
                     </div>
