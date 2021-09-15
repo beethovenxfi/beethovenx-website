@@ -26,7 +26,7 @@ export function Body() {
                 imageOnLeft={true}
                 text="With our automatically rebalancing investment pools, we turn the concept of an index fund on its head: instead of paying fees to portfolio managers to rebalance your portfolio, you collect fees from traders, who rebalance your portfolio by following arbitrage opportunities."
                 listItems={[
-                    'Set if and forget it',
+                    'Set it and forget it',
                     'Collect fees from traders and arbitragers',
                     'Permissionless platform, you control your funds',
                 ]}
