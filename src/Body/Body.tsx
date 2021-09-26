@@ -96,8 +96,8 @@ export function Body() {
 
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-body font-bold">
                     Participate in governance and shape the future of Beethoven X &middot; 80% of
-                    Protocol fees will be used to buyback $BEETS and redistribute them to stakers
-                    &middot; Future strategies will require $BEETS for participation
+                    Protocol fees will be used to buyback $BEETS and redistribute them to liquidity
+                    stakers &middot; Future strategies will require $BEETS for participation
                 </p>
                 <div className="divide-y-2 divide-green-500 divide-solid">
                     <div className="mt-12 md:flex items-center justify-center mb-16">
