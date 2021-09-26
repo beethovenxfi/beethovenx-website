@@ -12,6 +12,8 @@ import CommunityProjectHeadline from './assets/community-project-headline.svg';
 import DiscordIcon from './assets/discord-icon.png';
 import TwitterIcon from './assets/twitter-icon.png';
 import MediumIcon from './assets/medium-icon.png';
+import GitbookIcon from './assets/gitbook-logo.png';
+import GithubIcon from './assets/github-logo.png';
 import { BlueButton, GreenButton } from '../components/Buttons/Buttons';
 
 export function Body() {
@@ -113,23 +115,20 @@ export function Body() {
                     </BlueButton>*/}
                     </div>
                     <div className="flex justify-center pt-16">
-                        <a href="https://twitter.com/beethoven_x" className="mr-16">
+                        <a href="https://twitter.com/beethoven_x" className="mr-12">
                             <img src={TwitterIcon} width="40" className="mx-auto" />
-                            <div className="mt-2 text-green-500 font-book hidden lg:block">
-                                twitter.com/beethoven_x
-                            </div>
                         </a>
-                        <a href="https://beethovenxio.medium.com/" className="mr-16">
+                        <a href="https://beethovenxio.medium.com/" className="mr-12">
                             <img src={MediumIcon} width="40" className="mx-auto" />
-                            <div className="mt-2 text-green-500 font-book hidden lg:block">
-                                beethovenxio.medium.com
-                            </div>
                         </a>
-                        <a href="https://discord.gg/jedS4zGk28">
+                        <a href="https://discord.gg/jedS4zGk28" className="mr-12">
                             <img src={DiscordIcon} width="40" className="mx-auto" />
-                            <div className="mt-2 text-green-500 font-book hidden lg:block">
-                                discord.gg/jedS4zGk28
-                            </div>
+                        </a>
+                        <a href="https://docs.beethovenx.io/" className="mr-12">
+                            <img src={GitbookIcon} width="40" className="mx-auto" />
+                        </a>
+                        <a href="https://github.com/beethovenxfi">
+                            <img src={GithubIcon} width="40" className="mx-auto" />
                         </a>
                     </div>
                 </div>
