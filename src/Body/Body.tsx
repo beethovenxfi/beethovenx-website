@@ -23,8 +23,8 @@ export function Body() {
                 headlineImage={YieldGeneratingHeadline}
                 headlineText="Yield generating portfolios. Make your crypto work for you"
                 image={YieldGeneratingImage}
-                //buttonLeft={{ text: 'Invest', href: 'https://app.beethovenx.io' }}
-                //buttonRight={{ text: 'Trade', href: 'https://app.beethovenx.io/#/trade' }}
+                //buttonLeft={{ text: 'Invest', href: 'https://app.beets.fi' }}
+                //buttonRight={{ text: 'Trade', href: 'https://app.beets.fi/#/trade' }}
                 imageOnLeft={true}
                 text="With our automatically rebalancing investment pools, we turn the concept of an index fund on its head: instead of paying fees to portfolio managers to rebalance your portfolio, you collect fees from traders, who rebalance your portfolio by following arbitrage opportunities."
                 listItems={[
@@ -37,11 +37,14 @@ export function Body() {
                 headlineImage={FundsHeadline}
                 headlineText="Beethoven X Funds"
                 image={FundsImage}
-                //buttonLeft={{ text: 'Invest', href: 'https://app.beethovenx.io' }}
+                //buttonLeft={{ text: 'Invest', href: 'https://app.beets.fi' }}
                 text="Our funds provide investors with a full spectrum of exposure to the Fantom ecosystem, ranging from promising early stage DeFi tokens to more liquid assets like ETH and BTC. Each fund consists of a basket of underlying assets, weighted to provide optimal exposure."
             >
                 <div className="mt-8">
-                    <GreenButton href="https://app.beethovenx.io" customClassName="mx-auto sm:mx-0">
+                    <GreenButton
+                        href="https://app.beets.fi/#/invest"
+                        customClassName="mx-auto sm:mx-0"
+                    >
                         Invest now
                     </GreenButton>
                 </div>
@@ -62,7 +65,7 @@ export function Body() {
             >
                 <div className="mt-8">
                     <BlueButton
-                        href="https://app.beethovenx.io/#/trade"
+                        href="https://app.beets.fi/#/trade"
                         customClassName="mx-auto sm:mx-0"
                     >
                         Start trading
@@ -73,8 +76,8 @@ export function Body() {
                 headlineImage={MarketOpportunitiesHeadline}
                 headlineText="Leveraging market opportunities"
                 image={MarketOpportunitiesImage}
-                //buttonLeft={{ text: 'Invest', href: 'https://app.beethovenx.io' }}
-                //buttonRight={{ text: 'Trade', href: 'https://app.beethovenx.io/#/trade' }}
+                //buttonLeft={{ text: 'Invest', href: 'https://app.beets.fi' }}
+                //buttonRight={{ text: 'Trade', href: 'https://app.beets.fi/#/trade' }}
                 text="Beethoven X’s goal is to maximize the risk-adjusted return on your crypto portfolio. We will continue to launch automated investment strategies utilizing best of breed DeFi protocols, strong partnerships and innovative yield optimizers. We make your crypto work for you."
             >
                 <div className="mt-8">
@@ -108,7 +111,7 @@ export function Body() {
                             Find out more
                         </GreenButton>
                         {/*<BlueButton
-                        href="https://app.beethovenx.io/#/trade"
+                        href="https://app.beets.fi/#/trade"
                         customClassName="md:ml-8 mx-auto md:mx-0 mt-4 md:mt-0"
                     >
                         Buy $BEETS

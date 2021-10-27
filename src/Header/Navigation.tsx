@@ -48,9 +48,7 @@ export default function Navigation() {
                         >
                             Blog
                         </a>
-                        <GreenButtonSmall href="https://app.beethovenx.io/">
-                            Launch App
-                        </GreenButtonSmall>
+                        <GreenButtonSmall href="https://app.beets.fi/">Launch App</GreenButtonSmall>
                     </div>
                 </nav>
             </div>
@@ -99,10 +97,7 @@ export default function Navigation() {
                             </div>
 
                             <div className="mt-6 px-5">
-                                <GreenButton
-                                    href="https://app.beethovenx.io/"
-                                    customClassName="mx-auto"
-                                >
+                                <GreenButton href="https://app.beets.fi/" customClassName="mx-auto">
                                     Launch App
                                 </GreenButton>
                             </div>

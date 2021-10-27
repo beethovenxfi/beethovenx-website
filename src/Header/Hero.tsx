@@ -37,13 +37,13 @@ export default function Hero() {
                             </div>
                             <div className="pt-8 hidden sm:flex sm:pt-12">
                                 <GreenButtonSmall
-                                    href="https://app.beethovenx.io/"
+                                    href="https://app.beets.fi/#/invest"
                                     customClassName="mx-auto sm:mx-0"
                                 >
                                     Invest
                                 </GreenButtonSmall>
                                 <BlueButtonSmall
-                                    href="https://app.beethovenx.io/#/trade"
+                                    href="https://app.beets.fi/#/trade"
                                     customClassName="mx-auto mt-4 sm:ml-4 sm:mt-0 sm:mr-0"
                                 >
                                     Trade
