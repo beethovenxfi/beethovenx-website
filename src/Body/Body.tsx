@@ -82,7 +82,7 @@ export function Body() {
             >
                 <div className="mt-8">
                     <GreenButton
-                        href="https://docs.beethovenx.io/roadmap"
+                        href="https://docs.beethovenx.io/roadmap-v.-0.2"
                         customClassName="mx-auto sm:mx-0"
                     >
                         Checkout our roadmap
