@@ -28,16 +28,16 @@ export default function Hero() {
                                 X is the first next-generation AMM protocol on Fantom.
                             </p>
                             <div className="sm:hidden pt-8">
-                                <GreenButton href={''} customClassName="mx-auto">
+                                <GreenButton href="https://app.beets.fi/#/pools" customClassName="mx-auto">
                                     Invest
                                 </GreenButton>
-                                <BlueButton href={''} customClassName="mx-auto mt-4">
+                                <BlueButton href="https://app.beets.fi/#/trade" customClassName="mx-auto mt-4">
                                     Trade
                                 </BlueButton>
                             </div>
                             <div className="pt-8 hidden sm:flex sm:pt-12">
                                 <GreenButtonSmall
-                                    href="https://app.beets.fi/#/invest"
+                                    href="https://app.beets.fi/#/pools"
                                     customClassName="mx-auto sm:mx-0"
                                 >
                                     Invest

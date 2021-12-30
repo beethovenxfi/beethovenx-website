@@ -42,7 +42,7 @@ export function Body() {
             >
                 <div className="mt-8">
                     <GreenButton
-                        href="https://app.beets.fi/#/invest"
+                        href="https://app.beets.fi/#/pools"
                         customClassName="mx-auto sm:mx-0"
                     >
                         Invest now
@@ -98,9 +98,9 @@ export function Body() {
                 </p>
 
                 <p className="mt-3 text-base text-green-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl pl-4 text-center font-body font-bold">
-                    Participate in governance and shape the future of Beethoven X &middot; 80% of
+                    Participate in governance and shape the future of Beethoven X &middot; 30% of
                     Protocol fees will be used to buyback $BEETS and redistribute them to liquidity
-                    stakers &middot; Future strategies will require $BEETS for participation
+                    stakers &middot; 50% of Protocol fees will be directed to the DAO controlled treasury
                 </p>
                 <div className="divide-y-2 divide-green-500 divide-solid">
                     <div className="mt-12 md:flex items-center justify-center mb-16">
